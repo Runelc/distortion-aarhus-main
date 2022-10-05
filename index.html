@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gør dig klar til årets største fest, når Distortion udvider til smilets by: Aarhus. Kom med til koncert ved byens pejlemærker og mærk musikken med Aarhus smukke gader som indrammer dig og dine venner i kultur og hygge.">
+    <meta name="keywords" content="distortion, aarhus, gadefest, festival, koncert, jylland, studievenlig, musik, events">
+    <title>Distortion Aarhus</title>
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!-- container til header content -->  
+    <header id="header">
+        <!-- småt logo og dato container -->
+        <div id="logo-date">
+            <a id="small-logo" href="/"><img src="images/logosmall.webp" alt="Aarhus Distortion Logo"></a>
+            <p>7. - 11. JUNI 2023</p>
+        </div>
+        <!-- container til dark/light mode, sprog, billetknap og burgermenu -->
+        <div id="header-icons">
+            <div id="languages">
+                <a id="danish" class="language-selected" href="#">DA</a> / <a id="english" href="#">ENG</a>
+            </div>
+            <div id="mode-toggle">
+                <div class="toggle-container">
+                    <img class="sun" src="images/sun.svg" alt="sun icon">
+                    <img class="moon" src="images/moon.svg" alt="moon icon">
+                </div>
+            </div>
+            <a id="ticket" href="billetter/">
+                <img id="ticket-norip" src="images/ticket.svg" alt="ticket icon">
+                <img id="ticket-rip" src="images/ticket_rip.svg" alt="ticket icon">
+            </a>
+            <!-- Burger ikon i svg format for at kunne animere linjerne -->
+            <div class="after-menu" id="burger-container">
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="35" height="49.672" viewBox="0 0 55.5 49.672">
+                    <g id="burger-g" transform="translate(-183.709 2)">
+                      <line id="top-line" data-name="Line 89" x1="55" transform="translate(184.209 0.5)" fill="none" stroke="#000" stroke-width="6"/>
+                      <line id="mid-line" data-name="Line 90" x1="55" transform="translate(183.709 22.586)" fill="none" stroke="#000" stroke-width="6"/>
+                      <line id="bot-line" data-name="Line 91" x1="55" transform="translate(184.209 45.172)" fill="none" stroke="#000" stroke-width="6"/>
+                    </g>
+                </svg>
+            </div> 
+        </div>
+        
+    </header>
+    <!-- Menu container, liste med links -->
+    <nav id="navmenu" style="display: none;">
+        <ul>
+            <li><a id="link-program" href="program">Program</a></li>
+            <li><a id="link-billetter" href="billetter">Billetter</a></li>
+            <li><a id="link-kort" href="kort">Kort</a></li>
+            <li><a id="link-merch" href="merch">Merchandise</a></li>
+            <li><a id="link-om" href="om">Om Os</a></li>
+            <li><a id="link-frivillig" href="frivillig">Bliv Frivillig</a></li>
+        </ul>
+        <script src="js/navmenu.js"></script>
+    </nav>
+      
+    <main>
+        <!-- video i venstre side -->
+        <div id="video">
+            <video autoplay muted loop>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="top">
+
+            <!-- Sectioner delt op i lige store div elementer  -->
+            <div class="left-section"></div>
+            <div class="right-section first-section">
+
+                <!-- Stort logo forside  -->
+                <img id="logo" src="images/logo.webp" alt="Aarhus Distortion Logo">
+
+                <!-- Dato og timer  -->
+                <h2 id="datoer-til-fra">7. - 11. JUNI 2023</h2>
+                <div class="timer">
+                    <h2>BEGYNDER OM:</h2>
+                    <div id="countdown">
+                        <div class="countdown-nums" id="countdown-days"></div>
+                        <div class="countdown-text">D</div>
+                        <div class="countdown-nums tens" id="countdown-hours-tens"></div>
+                        <div class="countdown-nums" id="countdown-hours"></div>
+                        <div class="countdown-text">T</div>
+                        <div class="countdown-nums tens" id="countdown-mins-tens"></div>
+                        <div class="countdown-nums" id="countdown-mins"></div>
+                        <div class="countdown-text">M</div>
+                        <div class="countdown-nums tens" id="countdown-secs-tens"></div>
+                        <div class="countdown-nums" id="countdown-secs"></div>
+                        <div class="countdown-text">S</div>
+                        <script src="js/countdown.js"></script>
+                    </div>
+                </div>
+
+                <!-- Indledning brødtekst  -->
+                <p class="top-tekst">
+                    I anledning af Distortions 25års jubilæum, vil vi sprede kærligheden, dansen, musikken og venskaberne helt til smilets by: Aarhus!
+                    Vi håber Aarhus vil tage godt imod festlighederne og lege med når vi indtager de smukke gader.
+                </p>    
+            </div>
+        </section>
+
+        <section id="program">
+            <!-- Program overskrift venstre side -->
+            <div class="left-section">
+                <div class="title-container">
+                    <h2 class="section-title">PROGRAM</h2>
+                    <h2 class="section-title-outline">PROGRAM</h2>
+                </div>
+            </div>
+            <!-- Billede karrussel højre side over program  -->
+            <div class="right-section">
+                <div id="artist-karrussel">
+                    <div class="karrussel karrussel-top"></div>
+                    <div class="karrussel karrussel-bot"></div>
+                    <div class="karrussel-overlay"></div>
+                </div>
+                <a class="button" href="program">SE PROGRAM</a>
+            </div>
+        </section>
+
+        <section id="billetter">
+            <!-- Billet overskrift venstre side -->
+            <div class="left-section">
+                <div class="title-container">
+                    <h2 class="section-title">BILLETTER</h2>
+                    <h2 class="section-title-outline">BILLETTER</h2>
+                </div>
+            </div>
+            <!-- Animation af billetter  -->
+            <div class="right-section">
+                <canvas id="ticketanim"></canvas>
+                <a class="button" href="billetter">KØB BILLETTER</a>
+            </div>
+        </section>
+
+        <section id="kort">
+            <!-- Kort overskrift venstre side -->
+            <div class="left-section">
+                <div class="title-container">
+                    <h2 class="section-title">KORT</h2>
+                    <h2 class="section-title-outline">KORT</h2>
+                </div>
+            </div>
+            <!-- Animation af kort  -->
+            <div class="right-section">
+                <canvas id="kortanim"></canvas>
+                <a class="button" href="kort">SE KORT</a>
+            </div>
+        </section>
+
+        <section id="merch">
+            <!-- Merch overskrift venstre side -->
+            <div class="left-section">
+                <div class="title-container">
+                    <h2 class="section-title">MERCH</h2>
+                    <h2 class="section-title-outline">MERCH</h2>
+                </div>
+            </div>
+            <!-- Billede karrussel højre side over merchandise  -->
+            <div class="right-section">
+                <div id="merch-karrussel">
+                    <div class="karrussel-merch karrussel-merch-top"></div>
+                    <div class="karrussel-merch karrussel-merch-bot"></div>
+                    <div class="karrussel-overlay"></div>
+                </div>
+                <a class="button" href="merch">KØB MERCH</a>
+            </div>
+        </section>
+
+        <section id="citat">
+            <div class="left-section"></div>
+            <div class="right-section citat-section">
+                <!-- Citat fra direktør i højre side -->
+                <div class="citat">
+                    <h3>"Den del af nattelivet, som er smart og arrogant, gør vi modstand mod. Man kan føle man er en del af noget. Én familie."</h3>
+                    <h4>- Thomas Flerquin, Direktør for CPHDistortion</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <div id="footer">
+            <div class="left-section"></div>
+            <div class="right-section last-section">
+                <!-- footer element med links til om os og frivillig. samt kontaktinfo og SoMe links -->
+                <footer>
+                    <a href="om" class="button">OM OS</a>
+                    <a href="frivillig" class="button">BLIV FRIVILLIG</a>
+                    <div class="socials">
+                        <a href="#"><img src="images/fb.svg" alt="Facebook icon"></a>
+                        <a href="#"><img src="images/insta.svg" alt="Instagram icon"></a>
+                        <a href="#"><img src="images/twit.svg" alt="Twitter icon"></a>
+                    </div>
+                    <address>
+                        <p class="footer-titel">Adresse</p>
+                        <p>Email: aarhus@cphdistortion.dk <br>
+                            Tlf: 12 34 56 78</p>
+                    </address>
+                    <address>
+                        <p class="footer-titel">Kontakt</p>
+                        <p>Distortionvej 21 <br>
+                            8403 Distortionstrup</p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/canvasanim.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Class tilpasset til underside  */
+.right-section {
+    height: fit-content;
+    max-height: none;
+    color: var(--text-clr)
+}
+
+/* Titel på siden: "Frivillig" */
+.underside-titel {
+    text-decoration: underline var(--orange);
+}
+
+/* Styling af links  */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling af hero billede */
+.hero_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* container med alt indhold */
+.wrapper_fri {
+    margin: 16px;
+}
+
+/* opsætning af formular  */
+input[type=text],
+select,
+textarea {
+    font-family: var(--bebas-exp);
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/*   Styling af border rundt om formularen */
+.container {
+    border-radius: 5px;
+    outline: 1px solid black;
+    padding: 20px;
+}
+
+/* fødselsdags felt */
+#fods {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px auto 12px auto;
+    font-family: var(--bebas-exp);
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kunne du tænke dig at være frivillig til Danmarks største gadefest så har du chancen nu. Du kan tilmelde dig som frivillig til Distortion Aarhus 2023 lige her.">
+    <meta name="keywords"
+        content="frivillig, tilmelding, distortion Aarhus, gadefest, koncert, hjælper, fællesskab, medarbejder">
+    <title>Distortion Aarhus | Frivillig</title>
+    <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/frivillig.css">
+</head>
+
+<body>
+    <!-- container til header content -->
+    <header id="header">
+        <!-- småt logo og dato container -->
+        <div id="logo-date">
+            <a id="small-logo" href="../"><img src="../images/logosmall.webp" alt="Aarhus Distortion Logo"></a>
+            <p>7. - 11. JUNI 2023</p>
+        </div>
+        <!-- container til dark/light mode, sprog, billetknap og burgermenu -->
+        <div id="header-icons">
+            <div id="languages">
+                <a id="danish" class="language-selected" href="#">DA</a> / <a id="english" href="#">ENG</a>
+            </div>
+            <div id="mode-toggle">
+                <div class="toggle-container">
+                    <img class="sun" src="../images/sun.svg" alt="sun icon">
+                    <img class="moon" src="../images/moon.svg" alt="moon icon">
+                </div>
+            </div>
+            <a id="ticket" href="../billetter/">
+                <img id="ticket-norip" src="../images/ticket.svg" alt="ticket icon">
+                <img id="ticket-rip" src="../images/ticket_rip.svg" alt="ticket icon">
+            </a>
+            <!-- Burger ikon i svg format for at kunne animere linjerne -->
+            <div class="after-menu" id="burger-container">
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="35" height="49.672"
+                    viewBox="0 0 55.5 49.672">
+                    <g id="burger-g" transform="translate(-183.709 2)">
+                        <line id="top-line" data-name="Line 89" x1="55" transform="translate(184.209 0.5)" fill="none"
+                            stroke="#000" stroke-width="6" />
+                        <line id="mid-line" data-name="Line 90" x1="55" transform="translate(183.709 22.586)"
+                            fill="none" stroke="#000" stroke-width="6" />
+                        <line id="bot-line" data-name="Line 91" x1="55" transform="translate(184.209 45.172)"
+                            fill="none" stroke="#000" stroke-width="6" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <!-- Menu container, liste med links -->
+    <nav id="navmenu" style="display: none;">
+        <ul>
+            <li><a id="link-program" href="../program/">Program</a></li>
+            <li><a id="link-billetter" href="../billetter/">Billetter</a></li>
+            <li><a id="link-kort" href="../kort/">Kort</a></li>
+            <li><a id="link-merch" href="../merch/">Merchandise</a></li>
+            <li><a id="link-om" href="../om/">Om Os</a></li>
+            <li><a id="link-frivillig" href="../frivillig/">Bliv Frivillig</a></li>
+        </ul>
+        <script src="../js/navmenu.js"></script>
+    </nav>
+
+    <main>
+        <div id="video">
+            <video autoplay muted loop>
+                <source src="../images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="top">
+
+            <!-- Sectioner delt op i lige store div elementer  -->
+            <div class="left-section"></div>
+            <div class="right-section">
+
+                <!-- Titel på siden  -->
+                <h1 class="underside-titel">FRIVILLIG</h1>
+
+                <!-- Container som indeholder alt indhold på siden  -->
+                <div class="wrapper_fri">
+
+                    <!-- Hero billede øverst -->
+                    <img class="hero_img" src="../images/frivillig.webp" alt="frivillig arbejdere">
+
+                    <!-- broedtekst -->
+                    <p>Kunne du tænke dig at være frivillig til Danmarks største gadefest så har
+                        du chancen nu! Det eneste krav er at du skal være fyldt 18 år. </p> <br>
+
+                    <p>Når du har tilmeldt dig bliver du opskrevet på vores venteliste, du
+                        vil herefter blive kontaktet hvis vi har brug for din hjælp. </p> <br>
+
+                    <p><b>Du tilmelder dig ved at udfylde formularen herunder:</b></p> <br>
+
+                    <!-- Formular med kundens oplysninger -->
+                    <div class="container">
+                        <form>
+                            <label for="fnavn">Fornavn</label>
+                            <input type="text" id="fnavn" name="fornavn" placeholder="Dit navn...">
+
+                            <label for="Enavn">Efternavn</label>
+                            <input type="text" id="Enavn" name="efternavn" placeholder="Dit efternavn...">
+
+                            <label for="addresse">Addresse</label>
+                            <input type="text" id="addresse" name="adresse" placeholder="Din addresse...">
+
+                            <label for="nr">Telefon nr.</label>
+                            <input type="text" id="nr" name="telefon" placeholder="Dit telefon nr...">
+
+                            <label for="mail">E-mail</label>
+                            <input type="text" id="mail" name="mail" placeholder="Din e-mail...">
+
+                            <!-- Fødselsdags felt -->
+                            <label for="fods">Fødselsdato</label> <br>
+                            <input type="date" id="fods" name="fods"> <br>
+
+                            <p>Ønsker</p>
+                            <!-- Radio buttons  -->
+                            <input type="radio" id="4-6" name="onsker" value="4-6">
+                            <label for="4-6">Jeg ønsker at være frivillig i 4-6 timer</label><br>
+
+                            <input type="radio" id="10-12" name="onsker" value="10-12">
+                            <label for="10-12">Jeg ønsker at være frivillig i 10-12 timer</label><br>
+
+                            <input type="radio" id="16-18" name="onsker" value="16-18">
+                            <label for="16-18">Jeg ønsker at være frivillig i 16-18 timer</label> <br> <br>
+
+                            <!-- Textfelt/udfyldningsfelt -->
+                            <label for="subject">Om dig</label>
+                            <textarea id="subject" name="subject" placeholder="Skriv lidt om dig selv..."
+                                style="height:200px"></textarea>
+
+                            <!-- Uploading af billede fra kunden -->
+                            <label for="profilepic">Upload et billede af dig selv:</label><br>
+                            <input type="file" name="profilepic" id="profilepic" accept=".jpg, .jpeg, .png"> <br> <br>
+
+                            <!-- Submit knap -->
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- footer section -->
+        <div id="footer">
+            <div class="left-section"></div>
+            <div class="right-section last-section">
+                <!-- footer element med links til om os og frivillig. samt kontaktinfo og SoMe links -->
+                <footer>
+                    <a href="../om/" class="button">OM OS</a>
+                    <a href="../frivillig/" class="button">BLIV FRIVILLIG</a>
+                    <div class="socials">
+                        <a href="#"><img src="../images/fb.svg" alt="Facebook icon"></a>
+                        <a href="#"><img src="../images/insta.svg" alt="Instagram icon"></a>
+                        <a href="#"><img src="../images/twit.svg" alt="Twitter icon"></a>
+                    </div>
+                    <address>
+                        <p class="footer-titel">Adresse</p>
+                        <p>Email: aarhus@cphdistortion.dk <br>
+                            Tlf: 12 34 56 78</p>
+                    </address>
+                    <address>
+                        <p class="footer-titel">Kontakt</p>
+                        <p>Distortionvej 21 <br>
+                            8403 Distortionstrup</p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

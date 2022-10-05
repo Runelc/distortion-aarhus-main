@@ -1,0 +1,134 @@
+/* Class tilpasset til underside  */
+.right-section {
+    height: fit-content;
+    max-height: none;
+    color: var(--text-clr)
+}
+
+/* Titel på siden  */
+.underside-titel {
+    text-decoration: underline var(--purple);
+}
+
+/* Styling af links til undersider */
+.om_distortion,
+.faq,
+.kontakt {
+    width: 13ch;
+}
+
+/* Styling af links til undersider */
+.side_skift {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: 16px;
+    text-align: center;
+}
+
+/* Styling af links  */
+a {
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+/* Styling af underoverskrift */
+.underoverskrift {
+    margin: 40px;
+    font-size: 2.5rem;
+}
+
+/* Container med alt artikel indhold */
+.omos_wrapper {
+    padding: 1em;
+    display: grid;
+    Grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+}
+
+/* Titler på artikel elementer */
+.titel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Brødtekst i artikel  */
+.broed_tekst {
+    font-size: 1rem;
+}
+
+/* Billede styling i artiklen  */
+.om_billeder {
+    width: 100%;
+    height: auto;
+}
+
+/* Billede til distortion ved responsivitet  */
+.idag {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1060px) {
+
+    .underside-titel {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .omos_wrapper {
+        display: table-row;
+    }
+
+    .titel {
+        margin-top: 20px;
+    }
+
+    .idag {
+        display: block;
+    }
+
+    .dis_idag {
+        display: none;
+    }
+
+    .om_billeder {
+        margin-top: 10px;
+    }
+
+    .underoverskrift {
+        margin: 20px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .underside-titel {
+        font-size: 4.3rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .underside-titel {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .underside-titel {
+        font-size: 3.9rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .underside-titel {
+        font-size: 3.4rem;
+    }
+}

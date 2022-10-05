@@ -1,0 +1,429 @@
+@import url("https://use.typekit.net/njj5nkb.css");
+
+/* Farve variabler  */
+:root{
+    --bebas: bebas-neue-pro, sans-serif;
+    --bebas-semi: bebas-neue-pro-semiexpanded, sans-serif;
+    --bebas-exp: bebas-neue-pro-expanded, sans-serif;
+
+    --bg-clr: white;
+    --menu-clr: black;
+    --text-clr: black;
+    --text-alt: white;
+    --invert: 0;
+
+    --red: rgb(255, 74, 74);
+    --yellow: rgb(253, 234, 89);
+    --green: rgb(31, 216, 109);
+    --blue: rgb(62, 188, 255);
+    --purple: rgb(222, 113, 255);
+    --orange: rgb(255, 198, 105);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Ændre farver ved dark mode */
+.dark-mode{
+    --bg-clr: #18171a;
+    --menu-clr: white;
+    --text-clr: white;
+    --text-alt: black;
+    --invert: 1;
+}
+
+/* Body styling  */
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--bebas-semi);
+    font-size: 16px;
+    background-color: var(--bg-clr);
+}
+
+/* Fjerner scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--menu-clr);
+}
+
+/* Titel over de forskellige sider styling  */
+.underside-titel{
+    margin-top: 100px;
+    font-size: 6rem;
+    color: var(--text-clr);
+}
+
+/* Main styling  */
+main{
+    height: 100%;
+    --opacity: 0.4;
+    background: linear-gradient(180deg, rgba(255, 74, 74,var(--opacity)) 0%, rgba(253, 234, 89,var(--opacity)) 34%, rgba(31, 216, 109,var(--opacity)) 68%, rgba(62, 188, 255,var(--opacity)) 100%);
+}
+
+/* Video i venstre side af siden styling  */
+#video{
+    width: 100%;
+    background-image: url("../images/hero.jpeg");
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+#video video{
+    min-width: 60vw;
+    min-height: 100%;
+}
+
+section{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* Styling af højre side af siden  */
+.right-section{
+    height: 100vh;
+    max-height: 800px;
+    min-height: fit-content;
+    width: 50vw;
+    background-color: var(--bg-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.first-section{
+    border-radius: 5px 0 0 0;
+    justify-content: center;
+}
+.last-section{
+    border-radius: 0 0 0 5px;
+}
+
+/* Styling af venstre side af siden  */
+.left-section{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-title{
+    text-align: center;
+    height: fit-content;
+    font-size: 11vw;
+    font-family: var(--bebas-exp);
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 3px white;
+}
+
+.section-title-outline{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    font-size: 11vw;
+    font-family: var(--bebas-exp);
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(255, 255, 255, 0.25);
+    z-index: -1;
+    filter: blur(2px);
+    transform: scale(1.06) skewY(1deg);
+    animation: side 20s infinite;
+}
+
+/* Styling af overskrifter i venstre side  */
+@keyframes side {
+    from{transform: scale(1.06) skewY(1deg);}
+    50%{transform: scale(1.06) skewY(-1deg);}
+}
+
+/* Styling af stor logo på forsiden  */
+#logo{
+    width: 300px;
+    max-width: 400px;
+    margin: 0px 20px 10px 20px;
+    padding-top: 100px!important;
+}
+
+#datoer-til-fra{
+    color: var(--text-clr);
+}
+
+/* Countdown timer */
+#countdown {
+    
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    width: 100%;
+    max-width: 400px;
+}
+.countdown-text{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: transparent;
+    margin-right: auto;
+    margin-top: 0.35rem;
+    -webkit-text-stroke: 1px var(--text-clr);
+}
+
+.countdown-nums {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 1ch;
+    margin-left: auto;
+}
+
+.tens{
+    margin-right: -20%;
+}
+
+#countdown-days{
+    width: fit-content;
+}
+
+
+.timer{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 20px;
+    color: var(--text-clr);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.timer h2{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.top-tekst{
+    width: 90%;
+    max-width: 400px;
+    color: var(--text-clr);
+}
+
+
+
+/* Artist karrussel */
+#artist-karrussel, #merch-karrussel{
+    height: 70vh;
+    max-height: 450px;
+    width: 100%;
+    margin-bottom: 5%;
+    position: relative;
+    
+}
+
+.karrussel-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    --opacity: 0.18;
+    background: linear-gradient(100deg, rgba(255, 74, 74,var(--opacity)) 0%, rgba(253, 234, 89,var(--opacity)) 34%, rgba(31, 216, 109,var(--opacity)) 68%, rgba(62, 188, 255,var(--opacity)) 100%);
+
+}
+
+.karrussel{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: url("../images/artistkarrussel.webp");
+}
+
+/* Merch karrussel */
+.karrussel-merch{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: url("../images/merchkarrussel.webp");
+}
+.karrussel-merch:first-child{
+    background-position: right;
+}
+
+/* Knap styling */
+.button{
+    width: 13ch;
+    display: block;
+    padding: 0.5rem 1rem;
+    outline: 4px solid var(--text-clr);
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button:hover{
+    background-color: var(--text-clr);
+    color: var(--text-alt);
+}
+
+
+#ticketanim, #kortanim{
+    width: 80%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+}
+
+
+/* citat styling */
+.citat {
+    width: 80%;
+    margin-top: 60px;  
+}
+
+.citat h3 {
+    font-size: 3rem;
+    font-style: italic;  
+}
+.citat h4 {
+    margin-top: 20px; 
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.citat-section {
+    height: fit-content; 
+    color: var(--text-clr); 
+} 
+
+/* footer styling */
+
+#footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 80px;
+    margin-bottom: 3rem;
+}
+
+.socials{
+    width: 90%;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0 0em 0;
+    filter: invert(var(--invert));
+}
+
+address{
+    font-style: normal;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-top: 2em;
+    color: var(--text-clr);
+}
+
+.footer-titel{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {
+    .citat h3 {
+        font-size: 2.5rem;
+    }
+    .citat h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .left-section{
+        display: none;
+    }
+    .right-section{
+        width: 100vw;
+    }
+    main{
+        background-color: white;
+    }
+    #video{
+        display: none;
+    }
+    
+    #navmenu{
+        width: 100vw;
+    }
+    .citat h3 {
+        font-size: 3rem; 
+    }
+    .citat h4 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .citat h3 {
+        font-size: 2.8rem;
+    }
+    .citat h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .right-section{
+        height: fit-content;
+        padding-bottom: 3rem;
+    }
+    .first-section{
+        height: 90vh;
+    }
+    .citat h3 {
+        font-size: 2.5rem;
+    }
+    .citat h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .countdown-text{
+        font-size: 2.2rem;
+    }
+    
+    .countdown-nums {
+        font-size: 3.3rem;
+    }
+}

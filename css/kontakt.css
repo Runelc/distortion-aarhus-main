@@ -1,0 +1,45 @@
+/* Class tilpasset til underside  */
+.right-section {
+    height: fit-content;
+    max-height: none;
+    color: var(--text-clr)
+}
+
+/* Titel på siden: "Kontakt" */
+.underside-titel {
+    text-decoration: underline var(--purple);
+}
+
+/* Afstand mellem links til undersider */
+.om_distortion,
+.faq,
+.kontakt {
+    width: 13ch;
+}
+
+/* Styling af links generelt */
+a {
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+/* Styling af links til undersider */
+.side_skift {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: 16px;
+    text-align: center;
+}
+
+/* Billede øverst på siden  */
+.hero_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Container med alt indhold på siden */
+.wrapper_kon {
+    margin: 16px;
+}
